@@ -6,6 +6,55 @@ Use Mking-it-rain to provide the starting point of simulation.
 change "walltime" in the *.cntl file to extend the simulation time, a reasonable time would be 12-24 hours, in minites
 
 ```
+from __future__ import print_function
+from __future__ import division
+import sys
+import time
+import math
+import random
+import logging
+import signal
+import shutil
+import random
+
+from simtk import openmm as mm
+from simtk.openmm.app import *
+from simtk.openmm import *
+from simtk.unit import *
+from datetime import datetime
+
+from openmm_async_re import openmm_job_AmberABFE
+
+if __name__ == '__main__':
+
+    # Parse arguments:
+    usage = "%prog <ConfigFile>"
+
+    if len(sys.argv) != 2:
+        print("Please specify ONE input file")
+        sys.exit(1)
+
+    commandFile = sys.argv[1]
+
+    print("")
+    print("=======================================")
+    print("AToM ABFE Asynchronous Replica Exchange")
+    print("=======================================")
+    print("")
+    print("Started at: " + str(time.asctime()))
+    print("Input file:", commandFile)
+    print("")
+    sys.stdout.flush()
+
+    rx = openmm_job_AmberABFE(commandFile, options=None)
+
+    rx.setupJob()
+
+    rx.scheduleJobs()
+```
+
+python path/to/abfe_explicity.py fkbp-thi_asyncre.cntl
+```
 JOB_TRANSPORT = 'LOCAL_OPENMM'
 BASENAME = 'fkbp-thi'
 RE_SETUP = 'YES'
