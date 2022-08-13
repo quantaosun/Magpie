@@ -6,7 +6,7 @@
 
 ## What this does
 
-Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the references, with Free GPU on Google Colab. Modify the "WALLTIME" string in the *cntl file to extend the simulation time for better performance.
+Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the references, with Free GPU on Google Colab (https://colab.research.google.com/). Modify the "WALLTIME" string in the *cntl file to extend the simulation time for better performance.
 
 ## Credits
 
