@@ -3,8 +3,7 @@
   <img width="878" alt="image" src="https://user-images.githubusercontent.com/75652473/184472048-c4fe25de-3c44-40ec-888b-8beccdf3e11f.png">
 </p>
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://github.com/quantaosun/Magpie/blob/main/Magpie.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/quantaosun/Magpie/blob/main/Magpie.ipynb)
 ## What this does
 
 Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the references, with Free GPU on Google Colab (https://colab.research.google.com/). Modify the "WALLTIME" string in the *cntl file to extend the simulation time for better performance.
