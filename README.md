@@ -1,10 +1,6 @@
 
+## USE only on Goolge Golab terminal
 ## Credits
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-USE only on Goolge Golab terminal
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *   This notebook relies on the AToM-OpenMM plugin developed by Gallicchio-Lab (https://github.com/Gallicchio-Lab/AToM-OpenMM)
 
