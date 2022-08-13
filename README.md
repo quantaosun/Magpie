@@ -1,4 +1,5 @@
 
+![image](https://user-images.githubusercontent.com/75652473/184471805-cfaac80d-a15a-49ac-bfac-746afd76ae9c.png)
 
 
 ## What this does
@@ -31,5 +32,4 @@ https://doi.org/10.1021/acs.jctc.1c00266
 A finished file structure screenshot, delt G value is stored in the *.Rout file.
 <img width="486" alt="image" src="https://user-images.githubusercontent.com/75652473/184470279-35a99474-a426-4d1a-8294-e0dc4151f836.png">
 
-![image](https://user-images.githubusercontent.com/75652473/184471805-cfaac80d-a15a-49ac-bfac-746afd76ae9c.png)
 
