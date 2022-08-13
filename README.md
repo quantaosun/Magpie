@@ -1,57 +1,6 @@
-# ABFE
-Use Mking-it-rain to provide the starting point of simulation.
+# Magpie
 
-<img width="1209" alt="image" src="https://user-images.githubusercontent.com/75652473/184455032-10d9639c-32d7-4ef5-832f-e7adba7946f9.png">
-
-change "walltime" in the *.cntl file to extend the simulation time, a reasonable time would be 12-24 hours, in minites
-
-```
-from __future__ import print_function
-from __future__ import division
-import sys
-import time
-import math
-import random
-import logging
-import signal
-import shutil
-import random
-
-from simtk import openmm as mm
-from simtk.openmm.app import *
-from simtk.openmm import *
-from simtk.unit import *
-from datetime import datetime
-
-from openmm_async_re import openmm_job_AmberABFE
-
-if __name__ == '__main__':
-
-    # Parse arguments:
-    usage = "%prog <ConfigFile>"
-
-    if len(sys.argv) != 2:
-        print("Please specify ONE input file")
-        sys.exit(1)
-
-    commandFile = sys.argv[1]
-
-    print("")
-    print("=======================================")
-    print("AToM ABFE Asynchronous Replica Exchange")
-    print("=======================================")
-    print("")
-    print("Started at: " + str(time.asctime()))
-    print("Input file:", commandFile)
-    print("")
-    sys.stdout.flush()
-
-    rx = openmm_job_AmberABFE(commandFile, options=None)
-
-    rx.setupJob()
-
-    rx.scheduleJobs()
-```
+To extend simulation time, modify "walltime" in the *cntl file.
 
 python path/to/abfe_explicity.py fkbp-thi_asyncre.cntl
 ```
