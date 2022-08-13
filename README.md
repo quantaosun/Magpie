@@ -1,9 +1,9 @@
 
-## USE only on Goolge Golab terminal
+
 
 ## What this does
 
-Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the refences, with Free GPU on goolge colab.
+Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the refences, with Free GPU on goolge colab. 
 
 ## Credits
 
@@ -28,3 +28,5 @@ Publication Date:May 13, 2021
 https://doi.org/10.1021/acs.jctc.1c00266
 3.  Asynchronous Replica Exchange Software for Grid and Heterogeneous Computing https://doi.org/10.1016/j.cpc.2015.06.010 
  
+A finished file structure screenshot, delt G value is stored in the *.Rout file.
+<img width="486" alt="image" src="https://user-images.githubusercontent.com/75652473/184470279-35a99474-a426-4d1a-8294-e0dc4151f836.png">
