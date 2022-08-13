@@ -1,6 +1,4 @@
-
-![image](https://user-images.githubusercontent.com/75652473/184471805-cfaac80d-a15a-49ac-bfac-746afd76ae9c.png)
-
+<img width="878" alt="image" src="https://user-images.githubusercontent.com/75652473/184472048-c4fe25de-3c44-40ec-888b-8beccdf3e11f.png">
 
 ## What this does
 
