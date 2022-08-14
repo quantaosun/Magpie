@@ -43,3 +43,9 @@ Excute
 while True:pass
 ```
 to keep notebook from going idle if you haven't buy goole colab pro.
+
+# Critical
+![image](https://user-images.githubusercontent.com/75652473/184520269-6fb871fa-3830-453d-bc71-0fc049e1ba96.png)
+Modify displacement vector, This is crucial for correct result.
+This can be obtained by Pymol with fkbp_thi_0.pdb loaded for visulization, 
+and the text version of fkbp_thi_0.pdb for coordinate deduction.
