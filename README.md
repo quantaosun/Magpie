@@ -7,7 +7,7 @@
 ## What this does
 
 Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the references, with Free GPU on Google Colab (https://colab.research.google.com/). Modify the "WALLTIME" string in the *cntl file to extend the simulation time for better performance.
-
+ Modify the displacement vector based on your systme, in *cntl file, for example. DISPLACEMENT = ' 26.449, 0.468, 11.615 ' , and displ =  [26.449, 0.468, 11.615] in mdlambda.py.
 ## Credits
 
 *   This notebook relies on the AToM-OpenMM plugin developed by Gallicchio-Lab (https://github.com/Gallicchio-Lab/AToM-OpenMM)
