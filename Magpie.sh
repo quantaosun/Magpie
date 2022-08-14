@@ -23,7 +23,7 @@ source ~/.bashrc
 #@title Install dependencies,OpenMMM, atmmetaforce plugin.
 conda install -c anaconda configobj -y 
 conda install -c conda-forge openbabel -y
-conda install -c conda-forge ambertools
+conda install -c conda-forge ambertools -y
 conda install -c omnia openmm -y
 conda install -c conda-forge openmm-atmmetaforce-plugin -y
 
@@ -49,9 +49,9 @@ mkdir ligands receptor
 
 # Copy Making-it-rain ligand.mol2 and SYS_nw.pdb to 
 # ligands and receptor directory, respectively.
-cp ligand.mol2 ligands/
+cp ../../../../../../ligand.mol2 ligands/
 mv ligands/ligand.mol2 thi.mol2
-cp SYS_nw.pdb receptor/
+cp ../../../../../../sSYS_nw.pdb receptor/
 
 # Get rid of LIG to obtain a protein only file.
 # rename the file to fkbp.pdb
