@@ -78,6 +78,10 @@ python fkbp-thi_mdlambda.py
 # Modify WALLYIME in cntl file.
 # For example, WALLTIME = 720, means 12 hours.
 
+# Modify displacement vector, This is crucial for correct result.
+# This can be obtained by Pymol with fkbp_thi_0.pdb loaded for visulization, 
+# and the text version of fkbp_thi_0.pdb for coordinate deduction.
+
 # Replica exchange sampling, this would cost many hours to finish.
 python ../../../../../abfe_explicit.py fkbp-thi_asyncre.cntl
 
