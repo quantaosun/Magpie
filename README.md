@@ -8,9 +8,9 @@
 
 Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the references, with Free GPU on Google Colab (https://colab.research.google.com/). 
 
-## How to use the notebook
-Click the colab icon, starting the terminal to run the commands.
-Modify the "WALLTIME" string in the *cntl file to extend the simulation time for better performance. Modify the displacement vector based on your system, in *cntl file, for example. DISPLACEMENT = ' 26.449, 0.468, 11.615 ' , and displ = [26.449, 0.468, 11.615] in mdlambda.py.
+## How to use the code
+Excute Magpie.sh, with ctril+c to run the commands one by one, modify some file on the fly.
+(Modify the "WALLTIME" string in the *cntl file to extend the simulation time for better performance. Modify the displacement vector based on your system, in *cntl file, for example. DISPLACEMENT = ' 26.449, 0.468, 11.615 ' , and displ = [26.449, 0.468, 11.615] in mdlambda.py.)
 
 ## Credits
 
