@@ -45,7 +45,7 @@ mv receptor receptor_old
 
 # build new folder with same name.
 
-mdkir ligands receptor
+mkdir ligands receptor
 
 # Copy Making-it-rain ligand.mol2 and SYS_nw.pdb to 
 # ligands and receptor directory, respectively.
