@@ -13,7 +13,7 @@
 #!/usr/bin/env bash
 echo "Press CTRL+C to proceed."
 trap "pkill -f 'sleep 1h'" INT
-trap "set +xs ; sleep 1h ; set -x" DEBUG
+trap "set +x ; 如无错误请继续（记得修改向量） ; set -x" DEBUG
 # Install Conda
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh 
 chmod +x Miniconda3-py37_4.12.0-Linux-x86_64.sh 
@@ -53,9 +53,9 @@ mkdir ligands receptor
 
 # Copy Making-it-rain ligand.mol2 and SYS_nw.pdb to 
 # ligands and receptor directory, respectively.
-cp ../../../../../../ligand.mol2 ligands/
+cp ../../../../ligand.mol2 ligands/
 mv ligands/ligand.mol2 thi.mol2
-cp ../../../../../../sSYS_nw.pdb receptor/
+cp ../../../../sSYS_nw.pdb receptor/
 
 # Get rid of LIG to obtain a protein only file.
 # rename the file to fkbp.pdb
