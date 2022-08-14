@@ -94,6 +94,7 @@ python fkbp-thi_mdlambda.py
 
 # Replica exchange sampling, this would cost many hours to finish.
 echo "Please change the displacement vector in the *.cntl file"
+echo "Please change the simulation time in the *cntl file"
 echo "The next command would take hours"
 python ../../../../../abfe_explicit.py fkbp-thi_asyncre.cntl
 
