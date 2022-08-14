@@ -10,6 +10,10 @@
 ############## MAYBE ALSO GOOD TO USE IN LOCAL LINUX, NOT TESTED YET ############
 
 ########################## INSTALL SOFTWARES ####################################
+#!/usr/bin/env bash
+echo "Press CTRL+C to proceed."
+trap "pkill -f 'sleep 1h'" INT
+trap "set +xs ; sleep 1h ; set -x" DEBUG
 # Install Conda
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh 
 chmod +x Miniconda3-py37_4.12.0-Linux-x86_64.sh 
