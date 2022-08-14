@@ -58,7 +58,7 @@ cp ../../../../../ligand.mol2 .
 mv ligand.mol2 thi.mol2
 cd ..
 cd receptor
-cp ../../../../../SYS_nw.pdb receptor/
+cp ../../../../../SYS_nw.pdb .
 
 # Get rid of LIG to obtain a protein only file.
 # rename the file to fkbp.pdb
