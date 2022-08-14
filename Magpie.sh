@@ -50,6 +50,7 @@ mkdir ligands receptor
 # Copy Making-it-rain ligand.mol2 and SYS_nw.pdb to 
 # ligands and receptor directory, respectively.
 cp ligand.mol2 ligands/
+mv ligands/ligand.mol2 thi.mol2
 cp SYS_nw.pdb receptor/
 
 # Get rid of LIG to obtain a protein only file.
