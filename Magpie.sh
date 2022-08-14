@@ -57,6 +57,7 @@ cp SYS_nw.pdb receptor/
 cd receptor/
 grep -v LIG SYS_nw.pdb > fkbp.pdb
 rm SYS_nw.pdb
+cd ..
 ########################### SIMULATION ##########################################
 
 # Place setup-atm.sh under fkbp folder.
