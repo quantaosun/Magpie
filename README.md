@@ -20,7 +20,7 @@ Ctril+c to run the following command AFTER the previous one has FINISHED.
 
 Modify the "WALLTIME" string in the *cntl file if you wish to extend the time to more than 2 hours.
 
-Modify the displacement vector based on your protein-ligand system, see Magpie.ipynb for more.
+Modify the displacement vector and binding site center based on your protein-ligand system, see Magpie.ipynb for more.
 
 After finishing the simulation, you can close the terminal and use Magpie.ipynb to analyze the result.
 
