@@ -71,6 +71,7 @@ cd ..
 cp scripts/setup-atm.sh .
 echo "Please change displacement vector in setup-setting.sh the setup-atm.sh rely on"
 sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' scripts/setup-settings.sh
+sed -i 's/26 36 37 42 46 48 54 55 56 82/103 104 105 106/' scripts/setup-settings.sh
 bash ./setup-atm.sh
 
 # A new folder "complex" should be built
