@@ -23,6 +23,15 @@ Modify the "WALLTIME" string in the *cntl file if you wish to extend the time to
 Modify the displacement vector based on your protein-ligand system, see Magpie.ipynb for more.
 
 After finishing the simulation, you can close the terminal and use Magpie.ipynb to analyze the result.
+
+## How to prepare the Amber inputs?
+
+This is out of the scope of this repository, there are two ways you can do
+
+First, you prepare these files with Ambertools by yourself as per https://ambermd.org/tutorials/basic/tutorial7/index.php, which is likely to take forever for people without much MD experience.
+
+Second, and is recommended, use the fantastic https://github.com/pablo-arantes/making-it-rain/tree/main/PROTEIN_LIGAND notebook to generate your ligand.mol2 and SYS_nw.pdb.
+
 ## Credits
 
 *   This notebook relies on the AToM-OpenMM plugin developed by Gallicchio-Lab (https://github.com/Gallicchio-Lab/AToM-OpenMM)
