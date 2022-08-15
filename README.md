@@ -18,7 +18,7 @@ bash Magpie.sh
 
 Ctril+c to run the next command AFTER prvious one has FINISHED.
 
-Modify the "WALLTIME" string in the *cntl file. 
+Modify the "WALLTIME" string in the *cntl file if you wish to extend time to more than 2 hours.
 
 Modify the displacement vector based on your protein-ligand system.
 
