@@ -89,7 +89,7 @@ python fkbp-thi_equil.py
 # and the text version of fkbp_thi_0.pdb for coordinate deduction.
 
 # Intermediate lambda simulation
-echo "Please change the displacement vector now"
+echo "Please double check the displacement vector has been correctly placed in the fkbp-thi_mdlambda.py file"
 #sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_mdlambda.py
 python fkbp-thi_mdlambda.py
 
@@ -97,14 +97,16 @@ python fkbp-thi_mdlambda.py
 # For example, WALLTIME = 720, means 12 hours.
 
 # Replica exchange sampling, this would cost many hours to finish.
-echo "Please change the displacement vector in the *.cntl file"
+echo "Please double check the displacement vector has been correctly placed in the *.cntl file"
 #sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_asyncre.cntl
 
-echo "Please change the simulation time in the *cntl file"
+echo "Please change the simulation time in the *cntl file, if you wish to run for more than 2 hours"
 echo "The next command would take hours"
 python ../../../../../abfe_explicit.py fkbp-thi_asyncre.cntl
 
+
 ######################## ANALYSIS ###############################################
+echo "Analysis should be run inside the notebook"
 # Only use this in colab notebook.
 
 # activate R magic
