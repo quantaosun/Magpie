@@ -13,7 +13,7 @@ Standard binding free energy calculation with OpenMM via Protein-ligand Alchemic
 Execute Magpie.sh instead, 
 ```
 cd /path/to/Amber/inputs
-https://github.com/quantaosun/Magpie.git
+git clone https://github.com/quantaosun/Magpie.git
 cp Magpie/Magpie.sh .
 bash Magpie.sh
 ```
