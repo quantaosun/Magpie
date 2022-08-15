@@ -69,6 +69,8 @@ cd ..
 
 # Place setup-atm.sh under fkbp folder.
 cp scripts/setup-atm.sh .
+echo "Please change displacement vector in setup-setting.sh the setup-atm.sh rely on"
+sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' setup-settings.sh
 bash ./setup-atm.sh
 
 # A new folder "complex" should be built
@@ -88,7 +90,7 @@ python fkbp-thi_equil.py
 
 # Intermediate lambda simulation
 echo "Please change the displacement vector now"
-sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_mdlambda.py
+#sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_mdlambda.py
 python fkbp-thi_mdlambda.py
 
 # Modify WALLYIME in cntl file.
@@ -96,7 +98,7 @@ python fkbp-thi_mdlambda.py
 
 # Replica exchange sampling, this would cost many hours to finish.
 echo "Please change the displacement vector in the *.cntl file"
-sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_asyncre.cntl
+#sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_asyncre.cntl
 
 echo "Please change the simulation time in the *cntl file"
 echo "The next command would take hours"
