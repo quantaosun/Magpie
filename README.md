@@ -20,7 +20,7 @@ Ctril+c to run the next command AFTER prvious one has FINISHED.
 
 Modify the "WALLTIME" string in the *cntl file. 
 
-Modify the displacement vector
+Modify the displacement vector based on your protein-ligand system.
 
 ## Credits
 
