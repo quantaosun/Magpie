@@ -10,7 +10,13 @@ Standard binding free energy calculation with OpenMM via Protein-ligand Alchemic
 
 ## How to use the code
 Do not excute the notebook as it is not opetimised yet.
-Excute Magpie.sh instead, with ctril+c to run the commands one by one, modify some file on the fly.
+Excute Magpie.sh instead, 
+```
+cd /path/to/Amber/inputs
+bash Magpie.sh
+```
+
+with ctril+c to run the commands one by one, modify some file on the fly.
 (Modify the "WALLTIME" string in the *cntl file to extend the simulation time for better performance. Modify the displacement vector based on your system, as will be reminded when running sh file.
 
 ## Credits
