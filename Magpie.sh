@@ -71,6 +71,7 @@ cd ..
 cp scripts/setup-atm.sh .
 echo "Please change displacement vector in setup-setting.sh the setup-atm.sh rely on"
 sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' scripts/setup-settings.sh
+echo "Please change the bindng site center residue ID list in the setup-settings.sh"
 sed -i 's/26 36 37 42 46 48 54 55 56 82/103 104 105 106/' scripts/setup-settings.sh
 bash ./setup-atm.sh
 
@@ -91,7 +92,6 @@ python fkbp-thi_equil.py
 
 # Intermediate lambda simulation
 echo "Please double check the displacement vector has been correctly placed in the fkbp-thi_mdlambda.py file"
-#sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_mdlambda.py
 python fkbp-thi_mdlambda.py
 
 # Modify WALLYIME in cntl file.
@@ -99,7 +99,6 @@ python fkbp-thi_mdlambda.py
 
 # Replica exchange sampling, this would cost many hours to finish.
 echo "Please double check the displacement vector has been correctly placed in the *.cntl file"
-#sed -i 's/22.0, 22.0, 22.0/26.449, 0.468, 11.615/' fkbp-thi_asyncre.cntl
 
 echo "Please change the simulation time in the *cntl file, if you wish to run for more than 2 hours"
 echo "The next command would take hours"
