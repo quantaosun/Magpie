@@ -69,9 +69,8 @@ cd ..
 
 # Place setup-atm.sh under fkbp folder.
 cp scripts/setup-atm.sh .
-cp scripts/setup-settings.sh .
 echo "Please change displacement vector in setup-setting.sh the setup-atm.sh rely on"
-sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' setup-settings.sh
+sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' scripts/setup-settings.sh
 bash ./setup-atm.sh
 
 # A new folder "complex" should be built
