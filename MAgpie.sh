@@ -63,9 +63,7 @@ grep -v LIG SYS_nw.pdb > fkbp.pdb
 rm SYS_nw.pdb
 cd ..
 ########################### SIMULATION ##########################################
-# Modify node file,we will use CUDA together with CPU
-echo "localhost,0:0,1,CUDA,,/tmp" > scripts/nodefile
-echo "localhost-cpu,0:0,2,CPU,,/tmp" >> scripts/nodefile
+
 # Place setup-atm.sh under fkbp folder.
 cp scripts/setup-atm.sh .
 
