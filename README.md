@@ -16,7 +16,7 @@ cd /path/to/Amber/inputs
 bash Magpie.sh
 ```
 
-with ctril+c to run the commands one by one.
+Ctril+c to run the next command AFTER prvious one has FINISHED.
 
 Modify the "WALLTIME" string in the *cntl file. 
 
