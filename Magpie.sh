@@ -11,7 +11,7 @@
 
 ########################## INSTALL SOFTWARES ####################################
 #!/usr/bin/env bash
-echo "Press CTRL+C to proceed."
+echo "Press CTRL+C to proceed. The whole simulation would take many hours to finish."
 trap "pkill -f 'sleep 1h'" INT
 trap "set +x ; sleep 1h ; set -x" DEBUG
 # Install Conda
@@ -69,18 +69,27 @@ cd ..
 
 # Place setup-atm.sh under fkbp folder.
 cp scripts/setup-atm.sh .
+
+# Modify setup-settings.sh
 echo "Please change displacement vector in setup-setting.sh the setup-atm.sh rely on"
 sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' scripts/setup-settings.sh
+
 echo "Please change the bindng site center residue ID list in the setup-settings.sh"
+
 sed -i 's/26 36 37 42 46 48 54 55 56 82/103 104 105 106/' scripts/setup-settings.sh
+# 
 bash ./setup-atm.sh
 
 # A new folder "complex" should be built
+
+echo " A new complex folder has been created"
 cd complexes/fkbp-thi
 
 
 # Run minimization, equilibration.
 # NPT is included in the minitherm.py
+
+echo "Next is minimization and equilibration"
 
 python fkbp-thi_mintherm.py 
 python fkbp-thi_equil.py 
