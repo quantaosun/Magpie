@@ -7,8 +7,7 @@
 ## What this does
 
 Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the references, with Free GPU on Google Colab (https://colab.research.google.com/). 
-
-## How to use the code
+# How to use the code
 # Magpie.ipynb is here only for general reference, and ANALYSIS purposes.
 Execute Magpie.sh instead, 
 ```
