@@ -9,19 +9,20 @@
 Standard binding free energy calculation with OpenMM via Protein-ligand Alchemical Transformation Simulation, as described in the references, with Free GPU on Google Colab (https://colab.research.google.com/). 
 
 ## How to use the code
-# Do not excute the Mapie.ipynb, it is here only for reference purpose.
-Excute Magpie.sh instead, 
+# Mapie.ipynb is here only for general reference, and analysis purposes.
+Execute Magpie.sh instead, 
 ```
 cd /path/to/Amber/inputs
 bash Magpie.sh
 ```
 
-Ctril+c to run the next command AFTER prvious one has FINISHED.
+Ctril+c to run the following command AFTER the previous one has FINISHED.
 
-Modify the "WALLTIME" string in the *cntl file if you wish to extend time to more than 2 hours.
+Modify the "WALLTIME" string in the *cntl file if you wish to extend the time to more than 2 hours.
 
 Modify the displacement vector based on your protein-ligand system.
 
+After finishing the simulation, you can close the terminal and use Magpie.ipynb to analyze the result.
 ## Credits
 
 *   This notebook relies on the AToM-OpenMM plugin developed by Gallicchio-Lab (https://github.com/Gallicchio-Lab/AToM-OpenMM)
