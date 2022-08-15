@@ -29,6 +29,7 @@ Once you have figured out your parameters and have modified Magpie.sh accordingl
 <p align="center">
 <img width="662" alt="image" src="https://user-images.githubusercontent.com/75652473/184617779-b4483289-d03c-4d1a-846d-8c09a008c71a.png">
 </p>
+
 ## How to prepare the Amber inputs?
 
 This is out of the scope of this repository, there are two ways you can do
