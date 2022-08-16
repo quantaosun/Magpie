@@ -62,8 +62,6 @@ cp ../../../../../010.mol2 .
 cp ../../../../../008-pyra.mol2 .
 cp ../../../../../009-pyra.mol2 .
 cp ../../../../../010-pyra.mol2 .
-
-mv ligand.mol2 08.mol2
 cd ..
 cd receptor
 cp ../../../../../SYS_nw.pdb .
@@ -98,6 +96,8 @@ sed -i 's/thi prop dss dmso dapp dap but/008 009 010 008-pyra 009-pyra 010-pyra/
 # Change path to abfe.py 
 
 sed -i 's/$HOME/software/async_re-openmm/../../../../..//' scripts/setup-settings.sh
+
+echo "Previous command might have failed, we can fix this later"
 
 echo "Please double check if the path to async has been changed"
 
@@ -146,6 +146,7 @@ for i in sr1-* ; do ( cd $i ; echo "localhost,0:0,1,OpenCL,,/tmp" > nodefile ; p
 ######################## ANALYSIS ###############################################
 
 bash ./free_energies.sh
+echo " The analysis will fail, will be fixed later"
 
 ######################## ANALYSIS ###############################################
 
