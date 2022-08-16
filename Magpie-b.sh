@@ -59,9 +59,6 @@ cd ligands
 cp ../../../../../008.mol2 .
 cp ../../../../../009.mol2 .
 cp ../../../../../010.mol2 .
-cp ../../../../../008-pyra.mol2 .
-cp ../../../../../009-pyra.mol2 .
-cp ../../../../../010-pyra.mol2 .
 cd ..
 cd receptor
 cp ../../../../../SYS_nw.pdb .
@@ -91,7 +88,7 @@ echo "Please change the ligand list name and receptor name"
 sed -i 's/fkbp/sr1/' scripts/setup-settings.sh
 
 # Change ligand name
-sed -i 's/thi prop dss dmso dapp dap but/008 009 010 008-pyra 009-pyra 010-pyra/' scripts/setup-settings.sh
+sed -i 's/thi prop dss dmso dapp dap but/008 009 010/' scripts/setup-settings.sh
 
 # Change path to abfe.py 
 
@@ -114,7 +111,7 @@ cd complexes
 sed -i 's/fkbp/sr1/' prep.sh
 
 # Change ligand name
-sed -i 's/thi prop dss dmso dapp dap but/008 009 010 008-pyra 009-pyra 010-pyra/' prep.sh
+sed -i 's/thi prop dss dmso dapp dap but/008 009 010/' prep.sh
 
 # Run minimization, equilibration.
 # NPT is included in the minitherm.py
@@ -127,7 +124,7 @@ bash ./prep.sh
 
 echo "Alchemical replica sampling"
 echo "The next part is time consuming, may last for many hours"
-echo " Change OpenCL framework to CUDA framework， and start running the simulation."
+#echo " Change OpenCL framework to CUDA framework， and start running the simulation."
 
 # Modify WALLYIME in cntl file.
 # For example, WALLTIME = 720, means 12 hours.
