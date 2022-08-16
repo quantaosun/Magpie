@@ -32,8 +32,8 @@ conda install -c omnia openmm -y
 conda install -c conda-forge openmm-atmmetaforce-plugin -y
 
 # Install AToM from github source code
-git clone https://github.com/Gallicchio-Lab/AToM-OpenMM.git > software
-cd software
+#git clone https://github.com/Gallicchio-Lab/AToM-OpenMM.git
+cd AToM-OpenMM
 python setup.py install
 
 # Setup input files.
@@ -41,8 +41,7 @@ python setup.py install
 # and receptor (SYS_nw.pdb) file, then use grep -v to delete LIG.
 ########################### PLACE INPUTS ########################################
 # Go to workding directory
-cd ../
-cd AToM-OpenMM/examples/ABFE/fkbp
+cd examples/ABFE/fkbp
 
 # Change original directory to old names, 
 #mv ligands ligands_old
@@ -138,7 +137,7 @@ echo "The next command would take hours"
 
 # the for loop content is from run.sh file, in case possible failure in previous step to replace the path, absolute path used here instead.
 
-for i in sr1-* ; do ( cd $i ; echo "localhost,0:0,1,OpenCL,,/tmp" > nodefile ; python ../../../../../../software/abfe_explicit.py sr1-*_asyncre.cntl ) ; done
+for i in sr1-* ; do ( cd $i ; echo "localhost,0:0,1,OpenCL,,/tmp" > nodefile ; python ../../../../../abfe_explicit.py sr1-*_asyncre.cntl ) ; done
 
 
 ######################## ANALYSIS ###############################################
