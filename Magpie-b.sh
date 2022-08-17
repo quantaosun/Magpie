@@ -11,9 +11,7 @@
 
 ########################## INSTALL SOFTWARES ####################################
 #!/usr/bin/env bash
-echo "Press CTRL+C to proceed. The whole simulation would take many hours to finish."
-trap "pkill -f 'sleep 1h'" INT
-trap "set +x ; sleep 1h ; set -x" DEBUG
+read -t 5 -n 1 -s -r -p "Press any key to continue"
 # Install Conda
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh 
 chmod +x Miniconda3-py37_4.12.0-Linux-x86_64.sh 
@@ -98,6 +96,8 @@ echo "Previous command might have failed, we can fix this later"
 
 echo "Please double check if the path to async has been changed"
 
+read -t 5 -n 1 -s -r -p "Press any key to continue"
+
 # Place setup-atm.sh under fkbp folder.
 cp scripts/setup-atm.sh .
 
@@ -115,6 +115,8 @@ sed -i 's/thi prop dss dmso dapp dap but/008 009 010/' prep.sh
 
 # Run minimization, equilibration.
 # NPT is included in the minitherm.py
+
+read -t 5 -n 1 -s -r -p "Press any key to continue"
 
 echo "Next is minimization and equilibration for each of your ligands"
 bash ./prep.sh
@@ -134,10 +136,10 @@ echo "Please double check the displacement vector has been correctly placed in t
 
 echo "Please change the simulation time in the *cntl file, if you wish to run for more than 2 hours"
 echo "The next command would take hours"
-
+read -t 5 -n 1 -s -r -p "Press any key to continue"
 # the for loop content is from run.sh file, in case possible failure in previous step to replace the path, absolute path used here instead.
 
-for i in sr1-* ; do ( cd $i ; echo "localhost,0:0,1,OpenCL,,/tmp" > nodefile ; python ../../../../../abfe_explicit.py fkbp-*_asyncre.cntl ) ; done
+for i in sr1-* ; do ( cd $i ; echo "localhost,0:0,1,OpenCL,,/tmp" > nodefile ; python ../../../../../abfe_explicit.py sr1-*_asyncre.cntl ) ; done
 
 
 ######################## ANALYSIS ###############################################
