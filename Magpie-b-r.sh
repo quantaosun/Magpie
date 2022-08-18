@@ -11,9 +11,6 @@
 
 ########################## INSTALL SOFTWARES ####################################
 #!/usr/bin/env bash
-echo "Press CTRL+C to proceed. The whole simulation would take many hours to finish."
-trap "pkill -f 'sleep 1h'" INT
-trap "set +x ; sleep 1h ; set -x" DEBUG
 # Install Conda
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh 
 chmod +x Miniconda3-py37_4.12.0-Linux-x86_64.sh 
