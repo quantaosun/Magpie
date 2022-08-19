@@ -42,7 +42,7 @@ git clone https://github.com/choderalab/yank-examples.git
 cd yank-examples/examples/binding/t4-lysozyme/input
 
 # Copy and rename ligand
-cp cp ../../../../../ligand.mol2 .
+cp ../../../../../ligand.mol2 .
 mv ligand.tripos.mol2 ligand.tripos.mol2.old
 mv ligand.mol2 ligand.tripos.mol2
 
