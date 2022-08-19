@@ -77,7 +77,7 @@ sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' scripts/setup-setting
 
 echo "Please change the bindng site center residue ID list in the setup-settings.sh"
 
-sed -i 's/26 36 37 42 46 48 54 55 56 82/100 101 103 104 105 194/' scripts/setup-settings.sh
+sed -i 's/26 36 37 42 46 48 54 55 56 82/26 36 37 42 46 48 54 55 56 82/21 22 29 31 42 44 59 63 80 100 101 102 103 104 105 106 155 158 162 163 166 193 194 195/' scripts/setup-settings.sh
 
 echo "Please change the ligand list name and receptor name"
 
