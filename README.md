@@ -48,6 +48,7 @@ Second, and is recommended, use the fantastic https://github.com/pablo-arantes/m
 * Openbabel and Ambertools.(https://ambermd.org/AmberTools.php; http://openbabel.org/wiki/Main_Page)
 *  Analysis relies on UWHAM package in R.(https://github.com/patvarilly/uwham;   
 https://www.r-project.org/)
+* This notebook also provide an alternative ABFE with yank, which also is an OpenMM based method.http://getyank.org/latest/ 
 
 * Conda open source package management system. (https://docs.conda.io/en/latest/)
 
