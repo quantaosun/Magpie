@@ -68,7 +68,6 @@ cd ..
 ########################### SIMULATION ##########################################
 
 # Place setup-atm.sh under fkbp folder.
-cp scripts/setup-atm.sh .
 
 # Modify setup-settings.sh
 echo "Please change displacement vector in setup-setting.sh the setup-atm.sh rely on"
@@ -76,9 +75,18 @@ sed -i 's/"22.0" "22.0" "22.0"/"26.449" "0.468" "11.615"/' scripts/setup-setting
 
 echo "Please change the bindng site center residue ID list in the setup-settings.sh"
 
-sed -i 's/26 36 37 42 46 48 54 55 56 82/103 104 105 106/' scripts/setup-settings.sh
+# 008_sr1
+sed -i 's/26 36 37 42 46 48 54 55 56 82/21 22 29 31 42 44 80 100 101 102 103 104 105 109 155 158 162 163 166 193 194/' scripts/setup-settings.sh
+#009-sr1
+#sed -i 's/26 36 37 42 46 48 54 55 56 82/21 22 29 31 42 44 59 63 80 100 101 102 103 104 105 155 162 166 175 193 194 195/' scripts/setup-settings.sh
 # 
-bash ./setup-atm.sh
+# Change ligand name.
+# sed -i 's/.../.../' setup-setting.sh
+# change protein name
+# sed -i 's/.../.../' setup-setting.sh
+
+# run setup-atm.sh which source setup-setting.sh
+bash scripts/setup-atm.sh
 
 # A new folder "complex" should be built
 
