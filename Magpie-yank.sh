@@ -28,9 +28,9 @@ conda install -c omnia openmm -y
 conda install -c conda-forge openmm-atmmetaforce-plugin -y
 
 # Install AToM from github source code
-git clone https://github.com/Gallicchio-Lab/AToM-OpenMM.git
-cd AToM-OpenMM
-python setup.py install
+#+git clone https://github.com/Gallicchio-Lab/AToM-OpenMM.git
+#cd AToM-OpenMM
+#python setup.py install
 
 # Install yank
 
