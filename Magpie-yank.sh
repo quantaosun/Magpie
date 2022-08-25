@@ -54,6 +54,7 @@ grep -v LIG SYS_nw.pdb > receptor.pdbfixer.pdb
 
 # Go back to working directory
 # Change platform to OpenCL 
+cd ..
 sed -i 's/CUDA/OpenCL/' p-xylene-implicit.yaml
 
 # Start simulaiton
