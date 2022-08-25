@@ -48,7 +48,7 @@ mv ligand.mol2 ligand.tripos.mol2
 
 # Copy and rename protein
 
-cp cp ../../../../../SYS_nw.pdb .
+cp ../../../../../SYS_nw.pdb .
 mv receptor.pdbfixer.pdb receptor.pdbfixer.pdb.old 
 grep -v LIG SYS_nw.pdb > receptor.pdbfixer.pdb
 
