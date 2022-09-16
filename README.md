@@ -1,7 +1,4 @@
 
-<p align="center">
-  <img width="878" alt="image" src="https://user-images.githubusercontent.com/75652473/184472048-c4fe25de-3c44-40ec-888b-8beccdf3e11f.png">
-</p>
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/quantaosun/Magpie/blob/main/Magpie.ipynb)
 ## What this does
